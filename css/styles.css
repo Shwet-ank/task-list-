@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+/* color: rgb(255, 255, 73); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+    cursor: default;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(212, 212, 29); */
+    /* background-color: yellowgreen; */
+    background-image: linear-gradient(yellowgreen, yellow);
+    /* background-image: radial-gradient(yellowgreen,yellow); */
+
+}
+
+.main {
+    margin: 200px auto;
+    max-width: 600px;
+    width: 100%;
+    background-color: rgb(255, 255, 73);
+    /* background-color: yellowgreen; */
+    color: black;
+    padding: 2rem;
+}
+
+header {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.main .inputData {
+    display: flex;
+    height: 45px;
+    width: 100%;
+}
+
+.inputData {
+    margin-bottom: 20px;
+}
+
+.inputData input {
+    width: 100%;
+    font-size: 1.5rem;
+    height: 100%;
+    background-color: rgb(249, 249, 219);
+    border: none;
+    color: black;
+    padding-left: 1rem;
+    cursor: text;
+}
+
+.inputData input:focus {
+    outline: none;
+}
+
+.inputData button {
+    width: 15%;
+    margin: 0 5px;
+    font-size: 38px;
+    border: none;
+    outline: none;
+    color: rgb(123, 180, 9);
+    background-color: rgb(255, 255, 73);
+    /* background-color: red; */
+    cursor: pointer;
+    /* pointer-events: auto;
+    opacity: 1; */
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.inputData button.active {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/* .mainPart .ull {
+    background-color: yellow;
+} */
+
+.main .ull ul {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.main .ull li {
+    list-style-type: decimal;
+    height: 45px;
+    line-height: 45px;
+    /* background-color: yellowgreen; */
+    position: relative;
+    margin-bottom: .5rem;
+    padding: 0 1.5rem;
+    font-size: 1.5rem;
+    cursor: default;
+    overflow: hidden;
+    color: black;
+}
+
+.main li .delete {
+    position: absolute;
+    /* display: none; */
+    right: -45px;
+    background-color: yellowgreen;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.main li:hover .delete {
+    right: 0;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.footer .clear {
+    margin: 0 5px;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    color: rgb(123, 180, 9);
+    background-color: rgb(255, 255, 73);
+    /* background-color: red; */
+    cursor: pointer;
+}
+
+.footer .clear:hover {
+    text-decoration: underline;
+}
